@@ -53,7 +53,7 @@ while True:
         background = screen.copy()
         game.draw.line(screen,"Green",(Xs[a],Ys[a]),(x,y),1)
         game.display.update()
-        # game.time.wait(200)
+        game.time.wait(200)
         screen.blit(background,(0,0))
         game.draw.circle(screen,"Black",(x,y),1)
         x = int((x+Xs[a])/2)
