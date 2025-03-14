@@ -144,8 +144,10 @@ def open_new_window(Team_1):
         Team_1_info_i.set(Team_1_info)
         Team_2_info_i.set(Team_2_info)
         collective_info_i.set(collective_info)
+        new_window.after(100, lambda: live_score(Team_1))
 
-    new_window.after(10, live_score(Team_1))
+
+    new_window.after(10, lambda: live_score(Team_1))
 def combined():
     submit()
 team_label = tk.Label(root, text = "Enter the team ", font = ("Comic Sans MS", 14))
